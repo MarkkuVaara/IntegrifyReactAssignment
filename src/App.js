@@ -2,7 +2,8 @@
 function App() {
   return (
     <div className="main">
-      <p>IntegrifyReactAssignment</p>
+      <h1>Integrify React Assignment</h1>
+      <p>Test</p>
     </div>
   );
 }
