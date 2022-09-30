@@ -5,27 +5,25 @@ const Card = (props) => {
 
     return (
         <div className="cardcontent">
-            <p>Name: {person.name}</p>
-            <p>Username: {person.username}</p>
-            <p>E-mail: {person.email}</p>
-            <p>Address:</p>
+            <h2>{person.name}</h2>
+            <h3>Username:</h3> <p> {person.username}</p>
+            <h3>E-mail:</h3> <p> {person.email}</p>
+            <h3>Address:</h3>
             <div className="address">
-                <p>Street: {person.address.street}</p>
-                <p>Suite: {person.address.suite}</p>
-                <p>City: {person.address.city}</p>
-                <p>Zipcode: {person.address.zipcode}</p>
-                <div className="geo">
-                  <p>Geo(latitude): {person.address.geo.lat}</p>
-                  <p>Geo(longitude): {person.address.geo.lng}</p>
-                </div>
+                <div><b>Street:</b> <p> {person.address.street}</p></div>
+                <div><b>Suite:</b> <p> {person.address.suite}</p></div>
+                <div><b>City:</b> <p> {person.address.city}</p></div>
+                <div><b>Zipcode:</b> <p> {person.address.zipcode}</p></div>
+                <div><b>Geo(latitude):</b> <p> {person.address.geo.lat}</p></div>
+                <div><b>Geo(longitude):</b> <p> {person.address.geo.lng}</p></div> 
             </div>
-            <p>Phone: {person.phone}</p>
-            <p>Website: {person.website}</p>
-            <p>Company:</p>
+            <h3>Phone:</h3> <p>{person.phone}</p>
+            <h3>Website:</h3> <p> {person.website}</p>
+            <h3>Company:</h3>
             <div className="company">
-                <p>Name: {person.company.name}</p>
-                <p>Catchphrase: {person.company.catchPhrase}</p>
-                <p>Bs: {person.company.bs}</p>
+                <div><b>Name:</b> <p> {person.company.name}</p></div>
+                <div><b>Catchphrase:</b> <p> {person.company.catchPhrase}</p></div>
+                <div><b>Bs:</b> <p> {person.company.bs}</p></div>
             </div>
         </div>
     );
