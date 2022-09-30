@@ -1,4 +1,5 @@
 
+/* Texts */
 h1 {
   color: black;
   font-size: 36px;
@@ -8,6 +9,7 @@ p {
   color: black;
 }
 
+/* Main components */
 .main {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-left: 10%;
@@ -50,4 +52,51 @@ p {
 .geo {
   text-align: left;
   margin: 20px;
+}
+
+/* Popup-window */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  max-height: 80vh;
+  margin-top: calc(95vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 8px;
+  padding: 60px;
+  border: 1px solid black;
+  overflow: auto;
+  font-family: 16px Ubuntu sans-serif;
+}
+
+.close-icon {
+  content: 'X';
+  cursor: pointer;
+  position: absolute;
+  right: calc(7% - 30px);
+  top: calc(100vh - 90vh - 33px);
+  background: #ededed;
+  width: 35px;
+  height: 35px;
+  border-radius: 10%;
+  line-height: 30px;
+  text-align: center;
+  border: 3px solid #999;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
 }

@@ -54,25 +54,25 @@ const content = [
     },
     {
       id: 3,
-      name: "Ervin Howell",
-      username: "Antonette",
-      email: "Shanna@melissa.tv",
+      name: "Clementine Bauch",
+      username: "Samantha",
+      email: "Nathan@yesenia.net",
       address: {
-        street: "Victor Plains",
-        suite: "Suite 879",
-        city: "Wisokyburgh",
-        zipcode: "90566-7771",
+        street: "Douglas Extension",
+        suite: "Suite 847",
+        city: "McKenziehaven",
+        zipcode: "59590-4157",
         geo: {
-          lat: "-43.9509",
-          lng: "-34.4618"
+          lat: "-68.6102",
+          lng: "-47.0653"
         }
       },
-      phone: "010-692-6593 x09125",
-      website: "anastasia.net",
+      phone: "1-463-123-4447",
+      website: "ramiro.info",
       company: {
-        name: "Deckow-Crist",
-        catchPhrase: "Proactive didactic contingency",
-        bs: "synergize scalable supply-chains"
+        name: "Romaguera-Jacobson",
+        catchPhrase: "Face to face bifurcated interface",
+        bs: "e-enable strategic applications"
       }
     }
 ]
