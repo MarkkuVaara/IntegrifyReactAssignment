@@ -7,6 +7,10 @@ h1 {
 
 h2 {
   text-align: center;
+  padding: 10px;
+  border: 2px;
+  border-color: gray;
+  border-style: solid;
 }
 
 p {
@@ -24,6 +28,8 @@ p {
 .cards {
   display: flex;
   justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .card {
@@ -38,7 +44,7 @@ p {
 }
 
 .cardcontent {
-  text-align: left;
+  text-align: center;
   padding-left: 10px;  
   margin: 10px;
 }
@@ -49,9 +55,7 @@ p {
   text-align: left;
   padding: 10px;
   margin: 20px;
-  border: 2px;
-  border-color: gray;
-  border-style: solid;
+  background-color: aquamarine;
 }
 
 .company {
@@ -60,9 +64,7 @@ p {
   text-align: left;
   padding: 10px;
   margin: 20px;
-  border: 2px;
-  border-color: gray;
-  border-style: solid;
+  background-color: aquamarine;
 }
 
 .geo {
@@ -86,7 +88,7 @@ p {
 
 .box {
   position: relative;
-  width: 70%;
+  width: 60%;
   max-width: 1000px;
   margin: 0 auto;
   height: auto;
