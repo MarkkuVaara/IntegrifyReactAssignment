@@ -13,3 +13,21 @@ p {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  color: black;
+}
+
+.cardcontent {
+  text-align: left;
+  border: 2px;
+  border-color: gray;
+  border-style: solid;
+  padding-left: 10px;  
+  margin: 10px;
+}
