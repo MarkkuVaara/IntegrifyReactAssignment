@@ -1,6 +1,7 @@
 
 /* Texts */
 h1 {
+  text-align: center;
   color: black;
   font-size: 36px;
 }
@@ -8,9 +9,7 @@ h1 {
 h2 {
   text-align: center;
   padding: 10px;
-  border: 2px;
-  border-color: gray;
-  border-style: solid;
+  background-color: aquamarine;
 }
 
 p {
@@ -48,7 +47,7 @@ p {
 }
 
 .cardcontent {
-  text-align: center;
+  text-align: left;
   padding-left: 10px;  
   margin: 10px;
 }
