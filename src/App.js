@@ -3,6 +3,7 @@ import axios from "axios";
 
 import Card from './components/Card';
 import Popup from './components/Popup';
+import Placeholder from './images/placeholder.jpg';
 
 const App = () => {
 
@@ -30,6 +31,9 @@ const App = () => {
         {content.map(person => 
           <div className="card">
             <b>{person.name}</b>
+            <div style={{ height:'35%'}}>
+              <img src={Placeholder} alt={Placeholder} style={{ height:'100%'}}/>
+            </div>
             <p>@{person.username}</p>
             <p>{person.email}</p>
             <button onClick={() => togglePopUp(person.name)}>More details</button>

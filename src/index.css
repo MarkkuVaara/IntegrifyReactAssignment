@@ -27,7 +27,8 @@ p {
 
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -36,6 +37,7 @@ p {
 /* Card */
 .card {
   text-align: center;
+  display: inline-block;
   border: 2px;
   border-color: gray;
   border-style: solid;
