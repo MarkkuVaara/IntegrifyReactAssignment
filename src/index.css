@@ -10,6 +10,9 @@ h2 {
   text-align: center;
   padding: 10px;
   background-color: aquamarine;
+  border: 2px;
+  border-color: gray;
+  border-style: solid;
 }
 
 p {
@@ -52,12 +55,17 @@ p {
   margin: 10px;
 }
 
+.cardcontent > h3,
+.cardcontent > p {
+  margin: 20px;
+}
+
 .address {
   display: flex;
   justify-content: space-between;
   text-align: left;
   padding: 10px;
-  margin: 20px;
+  margin-left: 25px;
   background-color: aquamarine;
 }
 
@@ -66,7 +74,7 @@ p {
   justify-content: space-between;
   text-align: left;
   padding: 10px;
-  margin: 20px;
+  margin-left: 25px;
   background-color: aquamarine;
 }
 
@@ -74,7 +82,7 @@ p {
   display: flex;
   justify-content: space-between;
   text-align: left;
-  margin: 20px;
+  margin-left: 25px;
 }
 
 
