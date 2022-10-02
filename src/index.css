@@ -60,10 +60,19 @@ p {
   margin: 10px;
 }
 
-.address,
-.company {
+.address {
   display: flex;
   justify-content: space-between;
+  text-align: left;
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 20px;
+  background-color: aquamarine;
+}
+
+.company {
+  display: flex;
+  justify-content: space-around;
   text-align: left;
   padding: 10px;
   margin-left: 25px;
