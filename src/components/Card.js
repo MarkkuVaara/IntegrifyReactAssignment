@@ -15,8 +15,10 @@ const Card = (props) => {
                 <div><b>Suite:</b> <p> {person.address.suite}</p></div>
                 <div><b>City:</b> <p> {person.address.city}</p></div>
                 <div><b>Zipcode:</b> <p> {person.address.zipcode}</p></div>
+            </div>
+            <div className="geo">
                 <div><b>Geo(latitude):</b> <p> {person.address.geo.lat}</p></div>
-                <div><b>Geo(longitude):</b> <p> {person.address.geo.lng}</p></div> 
+                <div><b>Geo(longitude):</b> <p> {person.address.geo.lng}</p></div>
             </div>
             <h3>Phone:</h3> <p>{person.phone}</p>
             <h3>Website:</h3> <p> {person.website}</p>

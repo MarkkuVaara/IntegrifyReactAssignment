@@ -28,9 +28,8 @@ p {
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  display: grid;
+  grid-template-areas: '1fr 1fr 1fr';
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -43,7 +42,7 @@ p {
   border: 2px;
   border-color: gray;
   border-style: solid;
-  padding: 5%;  
+  padding: 10%;  
   margin: 10px;
   height: 200px;
   width: 200px;
@@ -80,9 +79,11 @@ p {
 
 .geo {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   text-align: left;
+  padding: 10px;
   margin-left: 25px;
+  background-color: aquamarine;
 }
 
 
