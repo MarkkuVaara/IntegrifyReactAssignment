@@ -34,8 +34,10 @@ const App = () => {
             <div style={{ height:'35%'}}>
               <img src={Placeholder} alt={Placeholder} style={{ height:'100%'}}/>
             </div>
-            <p>@{person.username}</p>
-            <p>{person.email}</p>
+            <i>@{person.username}</i> 
+            <br /><br />
+            <div> <a href={person.email} onclick="location.href=this.href" target="location.href=this.href">{person.email}</a> </div>
+            <br />
             <button onClick={() => togglePopUp(person.name)}>More details</button>
             {popUp === person.name && 
               <Popup 
