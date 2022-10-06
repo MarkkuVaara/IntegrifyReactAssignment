@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import axios from "axios";
 
 import Card from './components/Card';
-import Popup from './components/Popup';
 import Placeholder from './images/placeholder.jpg';
 
 const App = () => {
 
   const [content, setContent] = useState([]);
-  const [popUp, setPopUp] = useState("");
 
   useEffect(() => {
     axios
@@ -17,10 +16,6 @@ const App = () => {
         setContent(response.data)
       });
   }, []);
-
-  const togglePopUp = (name) => {
-    setPopUp(name);
-  };
 
   return (
 
@@ -38,12 +33,7 @@ const App = () => {
             <br /><br />
             <div> <a href={person.email} onclick="location.href=this.href" target="location.href=this.href">{person.email}</a> </div>
             <br />
-            <button onClick={() => togglePopUp(person.name)}>More details</button>
-            {popUp === person.name && 
-              <Popup 
-                content={ <Card person={person} /> } 
-                handleClose={togglePopUp} />
-            }
+            <button>More details</button>
           </div>
         )}
       </div>
@@ -55,3 +45,9 @@ const App = () => {
 }
 
 export default App;
+
+/* {popUp === person.name && 
+  <Popup 
+    content={ <Card person={person} /> } 
+    handleClose={togglePopUp} />
+} */
