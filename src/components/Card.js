@@ -1,8 +1,11 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const Card = (props) => {
 
-    const person = props.person;
+    const content = props.content;
+    const id = useParams().id;
+    const person = content.find(p => p.id === Number(id));
 
     return (
         <div className="cardcontent">

@@ -22,26 +22,33 @@ const App = () => {
     <div className="main">
       <h1>User information</h1>
 
-      <div className="cards">
         <Router>
-          {content.map(person => 
-            <div className="card">
-              <b>{person.name}</b>
-              <div style={{ height:'35%'}}>
-                <img src={Placeholder} alt={Placeholder} style={{ height:'100%'}}/>
+          <Routes>
+            <Route path={`/cards/:id`} element={
+              <div className="cardcontent">
+                <button><Link to={`/`}>Back to main page</Link></button>
+                <Card content={content} />
               </div>
-              <i>@{person.username}</i> 
-              <br /><br />
-              <div> <a href={person.email} onclick="location.href=this.href" target="location.href=this.href">{person.email}</a> </div>
-              <br />
-              <button><Link to={`/cards/${person.id}`}>More details</Link></button>
-              <Routes>
-                <Route path={`/cards/${person.id}`} element={<Card person={person} />} />
-              </Routes>
-            </div>
-          )}
+            } />
+            <Route path={`/`} element={
+              <div className="cards">
+              {content.map(person => 
+                <div className="card">
+                  <b>{person.name}</b>
+                  <div style={{ height:'35%'}}>
+                    <img src={Placeholder} alt={Placeholder} style={{ height:'100%'}}/>
+                  </div>
+                  <i>@{person.username}</i> 
+                  <br /><br />
+                  <div> <a href={person.email} onclick="location.href=this.href" target="location.href=this.href">{person.email}</a> </div>
+                  <br />
+                  <button><Link to={`/cards/${person.id}`}>More details</Link></button>
+                </div>
+              )}
+              </div>
+            } />
+          </Routes>
         </Router>
-      </div>
 
     </div>
 
@@ -50,9 +57,3 @@ const App = () => {
 }
 
 export default App;
-
-/* {popUp === person.name && 
-  <Popup 
-    content={ <Card person={person} /> } 
-    handleClose={togglePopUp} />
-} */
