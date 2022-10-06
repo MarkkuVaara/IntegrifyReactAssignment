@@ -25,7 +25,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route path={`/cards/:id`} element={
-              <div className="cardcontent">
+              <div className="buttoncontent">
                 <button><Link to={`/`}>Back to main page</Link></button>
                 <Card content={content} />
               </div>
