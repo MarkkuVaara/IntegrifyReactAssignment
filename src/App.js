@@ -23,19 +23,24 @@ const App = () => {
       <h1>User information</h1>
 
       <div className="cards">
-        {content.map(person => 
-          <div className="card">
-            <b>{person.name}</b>
-            <div style={{ height:'35%'}}>
-              <img src={Placeholder} alt={Placeholder} style={{ height:'100%'}}/>
+        <Router>
+          {content.map(person => 
+            <div className="card">
+              <b>{person.name}</b>
+              <div style={{ height:'35%'}}>
+                <img src={Placeholder} alt={Placeholder} style={{ height:'100%'}}/>
+              </div>
+              <i>@{person.username}</i> 
+              <br /><br />
+              <div> <a href={person.email} onclick="location.href=this.href" target="location.href=this.href">{person.email}</a> </div>
+              <br />
+              <button><Link to={`/cards/${person.id}`}>More details</Link></button>
+              <Routes>
+                <Route path={`/cards/${person.id}`} element={<Card person={person} />} />
+              </Routes>
             </div>
-            <i>@{person.username}</i> 
-            <br /><br />
-            <div> <a href={person.email} onclick="location.href=this.href" target="location.href=this.href">{person.email}</a> </div>
-            <br />
-            <button>More details</button>
-          </div>
-        )}
+          )}
+        </Router>
       </div>
 
     </div>
